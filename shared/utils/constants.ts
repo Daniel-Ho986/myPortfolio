@@ -124,7 +124,7 @@ const personalDetailsDefault: PersonalDetails = {
     designation: 'Laravel/Vue Developer',
     logo: 'https://owwlish.com/wp-content/uploads/2022/04/White-Logo.png'
   },
-  resume: 'https://drive.google.com/file/d/1hsjSLfbtNSge0ALb30_8diz4C8e5pN8U/view?usp=share_link',
+  resume: 'https://drive.google.com/file/d/15wHBuE7o_cgNkYg8DXzj_b6_RcHLMYyE/view?usp=share_link',
   calendyUrl: 'https://calendly.com/enjoydhoney'
 };
 
