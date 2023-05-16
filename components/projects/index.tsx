@@ -1,20 +1,18 @@
 import { ProjectCard } from '@shared-components';
 import { projectsDefault } from '@utils/constants';
-import { useContext, useEffect, useState } from 'react';
-import { ProjectDetailsContext } from 'shared/utils/contexts';
+import { useEffect, useState } from 'react';
 import { Project } from 'shared/utils/types';
 
 const ProjectsPage = (): JSX.Element => {
   const projects = projectsDefault;
 
   const category = [{ value: 'all', label: 'ALL' }];
-  projects &&
-    projects.forEach((p) =>
-      p.category.forEach((cat) => {
-        if (!category.find((c) => c.value === cat))
-          category.push({ value: cat, label: cat.toUpperCase() });
-      })
-    );
+  projects?.forEach((p) =>
+    p?.category?.forEach((cat) => {
+      if (!category.find((c) => c.value === cat))
+        category.push({ value: cat, label: cat.toUpperCase() });
+    })
+  );
   const [active, setActive] = useState('all');
 
   function changeProjects(c) {

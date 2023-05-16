@@ -19,8 +19,8 @@ export default function CompanyDetails({ activeCompany }: Props): JSX.Element {
         </p>
         <img src={company?.logo_url} alt={company?.name} />
         <ul className="text-sm lg:text-7xl mt-8 list-disc ml-5 z-30 cursor-auto">
-          {company?.responsibilities.map((r, idx) => {
-            return <li key={idx}>{r}</li>;
+          {company?.responsibilities.map((r) => {
+            return <li key={r}>{r}</li>;
           })}
         </ul>
       </div>
