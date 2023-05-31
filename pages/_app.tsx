@@ -24,31 +24,31 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
   return (
     <div>
       <Head>
-        <title>David Jin | Web Developer</title>
-        <meta name="title" content="David Jin | Web Developer" />
+        <title>Daniel Ho | Software Engineer</title>
+        <meta name="title" content="Daniel Ho | Web Developer" />
         <meta
           name="description"
-          content="David Jin is a Web Developer from Ontario, Canada. Jin is pursuing his undergraduate from Tongji University, Shanghai."
+          content="Daniel Ho is a Web Developer from Ontario, Canada. Jin is pursuing his undergraduate from Tongji University, Shanghai."
         />
         <meta
           name="keywords"
-          content="David Jin, Web Developer , Frontend Developer, Blockchain Developer, Backend Developer, Freelancer"
+          content="Daniel Ho, Web Developer , Frontend Developer, Blockchain Developer, Backend Developer, Freelancer"
         />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
         <meta name="language" content="English" />
         <meta name="revisit-after" content="10 days" />
-        <meta name="author" content="David Jin" />
-        <meta name="copyright" content="All rights reserved,2023. David Jin" />
+        <meta name="author" content="Daniel Ho" />
+        <meta name="copyright" content="All rights reserved,2023. Daniel Ho" />
         <meta httpEquiv="content-language" content="en" />
 
         {/* Open Graph / Facebook */}
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://davidjin.me/" />
-        <meta property="og:title" content="David Jin | Web Developer" />
+        <meta property="og:url" content="https://danielho.me/" />
+        <meta property="og:title" content="Daniel Ho | Software Engineer" />
         <meta
           property="og:description"
-          content="David Jin is a Web Developer from Ontario, Canada. Jin is pursuing his undergraduate from Tongji University, Shanghai."
+          content="I'm a software engineer based out of NY, US. I have bachelor's degree in Computer Science of Brooklyn College."
         />
 
         {/* Twitter */}
@@ -58,7 +58,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         <meta property="twitter:title" content="Harsh Goel | Software Developer" /> */}
         <meta
           property="twitter:description"
-          content="David Jin is a Web Developer from Ontario, Canada. Jin is pursuing his undergraduate from Tongji University, Shanghai."
+          content="Daniel Ho is a Software Developer from NY, US. Daniel has bachelor's degree in CS of Brooklyn College."
         />
         {/* Use Billboard to get an OG Image */}
         {/* <meta
@@ -114,7 +114,7 @@ function MyApp({ Component, pageProps, router }: AppProps): JSX.Element {
         <Loader />
       ) : (
         <AnimatePresence>
-          <div className="page-transition-wrapper overflow-x-hidden min-h-screen">
+          <div className="min-h-screen overflow-x-hidden page-transition-wrapper">
             <motion.div
               transition={spring}
               key={router.pathname}

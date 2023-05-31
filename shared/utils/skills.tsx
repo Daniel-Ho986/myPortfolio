@@ -34,10 +34,6 @@ const SKILLS: Skill[] = [
     src: '/images/skills/laravel.svg'
   },
   {
-    name: 'WordPress',
-    src: '/images/skills/wordpress.svg'
-  },
-  {
     name: 'MongoDB',
     src: '/images/skills/express.svg'
   },

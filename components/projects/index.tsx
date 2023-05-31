@@ -21,14 +21,14 @@ const ProjectsPage = (): JSX.Element => {
   useEffect(() => {}, [active]);
   return (
     <>
-      <div className="bg-blue pt-28 pb-20">
+      <div className="pb-20 bg-blue pt-28">
         <div className="overflow-x-hidden">
           <div className="pt-10 ml-4 sm:mx-12 md:mx-16">
             <div className="mb-10">
-              <h1 className="text-center text-3xl sm:text-2xl xl:text-3xl font-extrabold text-white leading-none mb-6">
-                Something that he has build
+              <h1 className="mb-6 text-3xl font-extrabold leading-none text-center text-white sm:text-2xl xl:text-3xl">
+                Something that I have built
               </h1>
-              <p className="text-center text-sm sm:text-7xl font-light text-white leading-none mb-6">
+              <p className="mb-6 text-sm font-light leading-none text-center text-white sm:text-7xl">
                 with love, expertise and pinch of magical ingredients
               </p>
             </div>
@@ -51,7 +51,7 @@ const ProjectsPage = (): JSX.Element => {
                 ))}
               </div>
             </div>
-            <div className="grid md:grid-cols-2 gap-4 place-items-center">
+            <div className="grid gap-4 md:grid-cols-2 place-items-center">
               {projects &&
                 projects.map((project: Project) => (
                   <ProjectCard

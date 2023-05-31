@@ -66,8 +66,8 @@ export default function Projects(): JSX.Element {
               </div>
               <div className="w-64 h-auto shadow-light-xl hover:shadow-light-3xl transform transition-all duration-300 hover:scale-110">
                 <TextCards
-                  heading="Blockchain"
-                  text="He uses his outstanding engineering abilities to provide users an awesome interface and experience"
+                  heading="DevOps"
+                  text="I use my outstanding engineering abilities to provide clients an awesome deployment environment"
                   color="violet"
                 />
               </div>

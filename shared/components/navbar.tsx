@@ -21,7 +21,7 @@ const NavItem = ({ href, title }: Props): JSX.Element => {
           px-5 py-2 pt-1 md:pt-4 md:px-4 md:text-center
           ${router.asPath === href ? 'border-b-2 md:border-none' : ''} 
           `}>
-          <p className="transition duration-500 ease-in-out transform md:hover:-translate-y-2 text-white font-bold md:hover:text-violet">
+          <p className="font-bold text-white transition duration-500 ease-in-out transform md:hover:-translate-y-2 md:hover:text-violet">
             {title}
           </p>
           <img
@@ -59,7 +59,7 @@ const Navbar = (): JSX.Element => {
       className={` mx-auto bg-blue w-full fixed z-30
       ${isScreenScrolled && 'shadow-2xl'}
       `}>
-      <nav className="block md:flex justify-between items-center p-2 px-8">
+      <nav className="items-center justify-between block p-2 px-8 md:flex">
         <div className="flex justify-between">
           <div>
             <Link href="/">
@@ -82,7 +82,7 @@ const Navbar = (): JSX.Element => {
           </div>
         </div>
         <div className={showMobileNav ? 'block pt-3 transition-all' : 'hidden md:block'}>
-          <ul className="md:flex md:flex-row border-pink border-2 md:border-none">
+          <ul className="border-2 md:flex md:flex-row border-pink md:border-none">
             {navlinks.map((item) => {
               return <NavItem title={item.title} href={item.href} key={item.href} />;
             })}
