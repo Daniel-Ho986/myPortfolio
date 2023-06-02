@@ -191,7 +191,7 @@ const projectsDefault: Project[] = [
     github: '',
     category: ['Laravel', 'VueJS', 'TypeScript'],
     featured: true,
-    url: 'modelmanagement.com'
+    url: 'https://www.modelmanagement.com/'
   },
   {
     slug: 'python-blockchain-Deus',
